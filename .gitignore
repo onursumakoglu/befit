@@ -5,3 +5,4 @@ img/ürünler/*
 
 img/*
 !.gitignore
+!img/ürünler
