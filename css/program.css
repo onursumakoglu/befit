@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+
+body{
+    font-family: OpenSans,Arial,sans-serif;;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    background-color: #f8f9fa;
+    top: 0px;
+}
+
+div#navContainer{
+    width: 1400px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+}
+
+div#navLogo{
+    float: left;
+}
+
+div#navLogo a{
+    text-decoration: none;
+    color: rgb(236, 85, 58);
+    font-size: 30px;
+    display: inline;
+    line-height: 90px;
+}
+
+ul#ulNav{
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul#ulNav li{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 90px;
+}
+
+ul#ulNav li input{
+    height: 30px;
+    width: 400px; 
+    border-radius: 30px;
+    border-color: rgb(253, 98, 70);
+    background-color: white;
+}
+
+ul#ulNav li a{
+    color: #7c7c7d;
+    text-decoration: none;
+}
+
+ul#ulNav li a:hover{
+    color: black;
+}
+
+section.nav-alti{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: black;
+}
+
+div#bilgi{
+    color: white;
+    line-height: 60px;
+    margin-left: 100px;
+}
+
+section.program-title h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+section.sec1{
+    width: 1400px;
+    height: 550px;
+    position: relative;
+    margin: auto;
+    background-color: rgb(255, 230, 226);
+    margin-top: 30px;
+    border: 1px solid rgb(161, 160, 160);
+}
+
+div#img-name{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+section.sec1 img{
+    margin-left: 60px;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 3px solid gray;
+    float: left;
+}
+
+ul.sec1-ul{
+    list-style-type: none;
+    display: block;
+    float: left;
+}
+
+ul.sec1-ul li{
+    display: block;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+ul.sec1-ul li a{
+    text-decoration: none;
+    color: rgb(1, 105, 105);
+}
+
+ul.sec1-ul li a:hover{
+    color: tomato;
+}
+
+ul.sec1-ul li input{
+    float: right;
+    height: 25px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.video{
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-left: 70px;
+}
+
+div.sec1-buttons{
+    margin-top: 50px;
+}
+
+.sec1-buttons ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.sec1-buttons ul li{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.sec1-buttons ul li button{
+    color: white;
+    height: 70px;
+    width: 150px;
+    background-color: #ee6868;
+    border-radius: 20px;
+    border-color: rgb(241, 179, 177); 
+    font-size: 15px;
+}
+
+section.sec2{
+    width: 1400px;
+    height: 550px;
+    /* position: relative; */
+    margin: auto;
+    background-color: #cefff1;
+    margin-top: 150px;
+    border: 1px solid rgb(161, 160, 160);
+}
+
+div#img-name{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+section.sec2 img.image1{
+    margin-left: 60px;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 3px solid gray;
+    float: left;
+}
+
+/* ul.sec2-ul{
+    list-style-type: none;
+    display: block;
+    float: left;
+}
+
+ul.sec2-ul li{
+    display: block;
+    line-height: 50px;
+    margin-left: 100px;
+    color: tomato;
+}
+
+ul.sec2-ul li:hover{
+    color: rgb(1, 105, 105);
+} */
+
+div.kahvalti{
+    float: left;
+    margin-left: 25px;
+    background-color: tomato;
+    height: 300px;
+    width: 220px;
+}
+
+div.ogle{
+    float: left;
+    background-color: turquoise;
+    height: 300px;
+    width: 220px;
+}
+
+div.aksam{
+    float: left;
+    background-color: yellow;
+    height: 300px;
+    width: 220px;
+}
+
+.sec2 li{
+    margin-left: 20px;
+}
+
+.image2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+}
+
+div.sec2-buttons{
+    margin-top: 50px;
+}
+
+.sec2-buttons ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.sec2-buttons ul li{
+    display: inline-block;
+    margin-left: 220px;
+}
+
+.sec2-buttons ul li button{
+    color: white;
+    height: 70px;
+    width: 150px;
+    background-color: #2d767f;
+    border-radius: 20px;
+    border-color: rgb(241, 179, 177); 
+    font-size: 15px;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+}

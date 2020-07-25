@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+
+body{
+    font-family: OpenSans,Arial,sans-serif;;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    background-color: #f8f9fa;
+    top: 0px;
+}
+
+div#navContainer{
+    width: 1400px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+}
+
+div#navLogo{
+    float: left;
+}
+
+div#navLogo a{
+    text-decoration: none;
+    color: rgb(236, 85, 58);
+    font-size: 30px;
+    display: inline;
+    line-height: 90px;
+}
+
+ul#ulNav{
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul#ulNav li{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 90px;
+}
+
+ul#ulNav li input{
+    height: 30px;
+    width: 400px; 
+    border-radius: 30px;
+    border-color: rgb(253, 98, 70);
+    background-color: white;
+}
+
+ul#ulNav li a{
+    color: #7c7c7d;
+    text-decoration: none;
+}
+
+ul#ulNav li a:hover{
+    color: black;
+}
+
+section.nav-alti{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+
+div#bilgi{
+    color: white;
+    padding: 20px;
+    padding-left: 180px;
+    /* margin-left: 180px; */
+}
+
+section.main-başlık{
+    height: 120px;
+    width: 1250px;
+    position: relative;
+    margin: auto;
+    border-top: 3px solid tomato;
+    border-bottom: 3px solid tomato;
+}
+
+.main-başlık h3{
+    padding: 30px;
+}
+
+section.mevcut-plan{
+    height: 360px;
+    width: 1250px;
+    position: relative;
+    margin: auto;
+    border-bottom: 3px solid tomato;
+}
+
+div.plan-başlık{
+    padding-top: 20px;
+}
+
+div.kutu{
+    float: left;
+    /* background-color: red; */
+    height: 230px;
+    width: 600px;
+    border: 1px solid black;
+}
+div.kutu div{
+    float: left;
+}
+
+div.kutu img{
+    height: 227px;
+    width: 200px;
+    border-right: 1px solid black;
+}
+
+div.kutu h6{
+    text-align: center; 
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+div.kutu p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.sag-kutu{
+    float: right;
+}
+
+section.products{
+    height: 400px;
+    width: 1250px;
+    position: relative;
+    margin: auto;
+    border-bottom: 3px solid tomato;
+}
+
+section.products .p1{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section.products div{
+    height: 320px;
+    width: 200px;
+    margin-left: 40px;
+    float: left;
+    text-align: center;
+}
+
+section.products div img{
+    height: 200px;
+    width: 170px;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/profil.css">
+    <title>B E F I T</title>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div id="navContainer">
+            <div id="navLogo"><a href="main.html">B E F I T</a></div>
+            <ul id="ulNav">
+                <li>
+                    <a href="">Eğitimler</a>
+                </li>
+                <li>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Ne yapmak istersiniz ?" aria-label="Search">
+                    </form>
+                </li>
+                <li>
+                    <a href="program.html">Bugün Yapmam Gerekenler</a>
+                </li>
+                <li>
+                    <a href="">Sepetim</a>
+                </li>
+                <li>
+                    <a href="">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="clear: both;"></div>
+
+    <section class="nav-alti">
+        <div id="bilgi">#</div>
+    </section>
+
+    <section class="profil">
+        <div class="profil-başlık">
+            <h2>Profiliniz</h2>
+            <h3>Temel bilgilerinizi ekleyiniz.</h3>
+        </div>
+
+        <div class="profil-foto">
+            <img src="img/profil.jpg" alt="">
+            <form action="">
+                <input style="width: 150px; height: 30px;" class="form-control-file" type="file" id="myFile" name="image">
+                <button>Fotoğrafı Güncelle</button>
+            </form>
+            
+        </div>
+
+        <div class="bilgiler">
+            <form action="profil.html">
+                <label for="fname">Adınız: </label>
+                <input type="text" id="fname"><br><br>
+                <label for="lname">Soyadınız: </label>
+                <input type="text" id="lname"><br><br>
+                <label for="email">E-mail: </label>
+                <input type="text" id="email"><br><br>
+                <label for="tel">Telefon: </label>
+                <input type="text" id="tel"><br><br>
+                <label for="cins">Cinsiyet: </label>
+                <input type="text" id="cins"><br><br>
+                <button>Kaydet</button>
+              </form>
+        </div>
+    </section>
+
+    <div style="clear: both;"></div>
+
+    <section class="profil2">
+        <div class="profil2-başlık">
+            <h3>Kişisel bilgilerinizi giriniz.</h3>
+        </div>
+        <div class="profil2-sol">
+            <div>
+                <form action="profil.html">
+                    <label for="boy">Boy: </label>
+                    <input type="text" id="boy"><br><br>
+                    <label for="kilo">Kilo: </label>
+                    <input type="text" id="kilo"><br><br>
+                    <label for="boyun">Boyun Ölçüsü: </label>
+                    <input type="text" id="boyun"><br><br>
+                    <label for="bel">Bel Ölçüsü: </label>
+                    <input type="text" id="bel"><br><br>
+                  </form>
+            </div>
+        </div>
+
+
+        <div class="profil2-sağ">
+            <div>
+                <form action="profil.html">
+                    <label for="yaş">Göğüs Ölçüsü: </label>
+                    <input type="text" id="yaş"><br><br>
+                    <label for="boy">Kol Ölçüsü: </label>
+                    <input type="text" id="boy"><br><br>
+                    <label for="kilo">Kalça Ölçüsü: </label>
+                    <input type="text" id="kilo"><br><br>
+                    <label for="vke">Bacak Ölçüsü: </label>
+                    <input type="text" id="vke"><br><br>
+                  </form>
+            </div>      
+        </div>
+
+        <div class="profil2-güncelle">
+            <button>
+                Değişiklikleri Kaydet
+            </button>
+        </div>
+
+        <div class="sonuçlar">
+            
+            <!-- <div class="vke">
+                <label for="">Bilgilerinize göre oluşan Vücut Kitle Endeksiniz</label>
+            </div>
+
+            <div class="yağ">
+                <label for="">Bilgilerinize göre oluşan Yağ Oranınız</label>
+            </div> -->
+
+            <form class="vke">
+                <label for="fname">Bilgilerinize göre oluşan Vücut Kitle Endeksiniz</label><br>
+                <label id="fname">-</label>
+              </form>
+
+              <form class="vke">
+                <label for="fname">Bilgilerinize göre oluşan Yağ Oranınız</label><br>
+                <label id="fname">-</label>
+              </form>
+        </div>
+    </section>
+
+    <div style="clear: both;"></div>
+
+    <section class="kayitlar">
+        <div class="kayit-baslik">
+            <h2>Kayıtlı Olduğunuz Programlar</h2>
+        </div>
+
+        <div class="fitness-baslik">
+            <label for="">
+                <h4>Fitness Programı</h5>
+            </label>
+        </div>
+        <div class="kayit-fitness">
+            <div class="fitness-gorsel">
+                <div class="gorsel-baslik">
+                    <h6>-- ile Vücut Geliştirme Programı</h6>
+                </div>
+                <img src="img/egitmen1.jpg" alt="">
+            </div>
+            <div class="fitness-bilgiler">
+                <form>
+                    <label for="kayit-bas">Kayıt Tarihi :</label>
+                    <label id="kayit-bas">-</label><br><br>
+                    <label for="kayit-bit">Kayıt Bitiş Tarihi :</label>
+                    <label id="kayit-bit">-</label><br><br>
+                    <label for="deg">Vücut Ölçüsü Değişiklikleri :</label>
+                    <label id="deg">-</label><br><br>
+                    <label for="">Eğitmeni Değerlendir</label><br>
+                    <input type="radio" id="Verimli" name="gender" value="Verimli">
+                    <label for="male">Verimli</label>
+                    <input type="radio" id="Kararsızım" name="gender" value="Kararsızım">
+                    <label for="Kararsızım">Kararsızım</label>
+                    <input type="radio" id="other" name="Verimsiz" value="Verimsiz">
+                    <label for="other">Verimsiz</label><br>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
+
+        <div class="fitness-baslik">
+            <label for="">
+                <h4>Diyet Programı</h5>
+            </label>
+        </div>
+        <div class="kayit-fitness">
+            <div class="fitness-gorsel">
+                <div class="gorsel-baslik">
+                    <h6>-- ile Diyet Programı</h6>
+                </div>
+                <img src="img/egitmen2.jpg" alt="">
+            </div>
+            <div class="fitness-bilgiler">
+                <form>
+                    <label for="kayit-bas">Kayıt Tarihi :</label>
+                    <label id="kayit-bas">-</label><br><br>
+                    <label for="kayit-bit">Kayıt Bitiş Tarihi :</label>
+                    <label id="kayit-bit">-</label><br><br>
+                    <label for="deg">Vücut Ölçüsü Değişiklikleri :</label>
+                    <label id="deg">-</label><br><br>
+                    <label for="">Eğitmeni Değerlendir</label><br>
+                    <input type="radio" id="Verimli" name="gender" value="Verimli">
+                    <label for="male">Verimli</label>
+                    <input type="radio" id="Kararsızım" name="gender" value="Kararsızım">
+                    <label for="Kararsızım">Kararsızım</label>
+                    <input type="radio" id="other" name="Verimsiz" value="Verimsiz">
+                    <label for="other">Verimsiz</label><br>
+                    <input type="submit" value="Gönder">
+                    
+                  </form>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <div class="cikis">
+        <a href="index.html" style="color:black; text-decoration: none;">
+            <button style="color: white; height: 30px; width: 200px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 18px;">
+                Çıkış Yap
+            </button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <footer class="page-footer font-small special-color-white text-white bg-dark pt-2">
+            <div class="text-center py-3">
+                © B E F I T 2020 - Tüm hakları saklıdır.
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

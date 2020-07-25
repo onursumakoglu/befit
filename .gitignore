@@ -1,0 +1,7 @@
+.__pycache__
+
+img/ürünler/*
+!.gitignore
+
+img/*
+!.gitignore
