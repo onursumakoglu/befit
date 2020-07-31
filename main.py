@@ -19,6 +19,7 @@ class register_form(Form):
 
 
 app = Flask(__name__, static_url_path='/static')
+app.secret_key = "befit"
 
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
@@ -38,16 +39,34 @@ def index():
 def login_page():
     return render_template("login.html")
 
+
 @app.route("/register", methods = ["GET","POST"])
 def register_page():
 
     form = register_form(request.form)
 
-    if request.method == "POST":
+    if request.method == "POST" and form.validate():
+
+        name = form.name.data
+        username = form.username.data
+        email = form.email.data
+        password = sha256_crypt.encrypt(form.password.data)
+
+        cursor = mysql.connection.cursor()
+
+        sorgu = "Insert into users(name,email,username,password) VALUES(%s,%s,%s,%s)"
+
+        cursor.execute(sorgu,(name,email,username,password))
+        mysql.connection.commit()
+        cursor.close()
+
+        flash(f"Hoşgeldiniz, {username}", "success")
+        
         return redirect(url_for("main_page"))
 
     else:
         return render_template("register.html", form = form)
+
 
 @app.route("/anasayfa")
 def main_page():

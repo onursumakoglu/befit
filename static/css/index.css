@@ -60,16 +60,6 @@ ul#ulNav li a:hover{
     color: black;
 }
 
-.big-banner{
-
-    background-image: 'static/images/background2.png';
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 400px;;
-    color: white;
-    
-}
-
 .hedefler{
     margin-top: 50px;
     margin-bottom: 150px;

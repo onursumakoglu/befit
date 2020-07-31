@@ -5,4 +5,4 @@ static/images/ürünler/*
 
 static/images/*
 !.gitignore
-!images/ürünler
+!.images/ürünler
