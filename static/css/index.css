@@ -62,7 +62,7 @@ ul#ulNav li a:hover{
 
 .big-banner{
 
-    background-image: url('../img/background2.png');
+    background-image: 'static/images/background2.png';
     background-size: 100%;
     background-repeat: no-repeat;
     height: 400px;;

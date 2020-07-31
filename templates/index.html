@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+    
+{% block body %}
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+
+    <section class="jumbotron big-banner">
+        <div class="container">
+        <h1 class="display-3">Dilediğiniz yerde eğitiminize devam edin.</h1>
+        <p style="font-size: 25px; color: #ee6868; ">
+            Kim evinde özel eğitmen eşliğinde çalışıpta sıkı bir vücuda sahip olmak istemez ki ?
+        </p>
+        <p>
+                <a href="/register">
+                    <button style="color: white; height: 48px; width: 135px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 20px;">
+                        Bize Katılın
+                    </button>
+                </a>
+        </p>
+        </div>
+    </section>
+
+
+    <section class="hedefler">
+        <h2 class="hedefler-title">B E F I T İle Hedeflerinize Ulaşın</h2>
+        <ul class="hedefler-list">
+            <li class="hedefler-item">
+                <h3 class="hedefler-item-title">
+                    <span>
+                        VERİM
+                        <div></div>               
+                        <small>En iyi eğitmenlerden vücudunuza en uygun eğitimleri alın.</small>
+                    </span>
+                </h3>
+            </li>
+            <li class="hedefler-item">
+                <h3 class="hedefler-item-title">
+                    <span>
+                        BÜTÜNLÜK
+                        <div></div>               
+                        <small>Eğitmenlerin yanında diyetisten yardımına mı ihtiyacınız var, o zaman 
+                            doğru yerdesiniz.
+                        </small>
+                    </span>
+                </h3>
+            </li>
+            <li class="hedefler-item">
+                <h3 class="hedefler-item-title">
+                    <span>
+                        VERİM
+                        <div></div>               
+                        <small>Eğitmeninize yapacağınız geri dönüşlerle hedefinize
+                            daha hemen ulaşın.
+
+                        </small>
+                    </span>
+                </h3>
+            </li>
+            <li class="hedefler-item">
+                <h3 class="hedefler-item-title">
+                    <span>
+                        DEĞERLENDİRME
+                        <div></div>               
+                        <small>Eğitmenlerini değerlendirin ve sonraki kullanıcılara
+                            ışık tutun.
+                        </small>
+                    </span>
+                </h3>
+            </li>
+        </ul>
+
+
+    </section>
+
+    <section class="bg-blue py-5">
+        bölüm3
+    </section>
+
+    <section class="py-5">
+        bölüm4
+    </section>
+
+    
+
+{% endblock body %}

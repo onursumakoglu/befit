@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+{% from "includes/formhelpers.html" import render_field %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/log-reg.css') }}">
+</head>
+
+<div class="kayit-içeriği">
+    <h1>B E F I T 'e Kayıt Olun</h1>
+
+    <form method = "post">
+        {{ render_field(form.name) }}
+        {{ render_field(form.username) }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.confirm) }}
+        <button type="submit" class="btn btn-secondary">Kayıt Ol</button>
+    </form>
+
+
+    
+</div>
+
+{% endblock body %}
+

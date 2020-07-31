@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <nav>
+        <div id="navContainer">
+            <div id="navLogo"><a href="/">B E F I T</a></div>
+            <ul id="ulNav">
+                <li>
+                    <a href="">Eğitimler</a>
+                </li>
+                <li>
+                    <a href="">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="">Neden BeFit?</a>
+                </li>
+                <li>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Ne yapmak istersiniz ?" aria-label="Search">
+                    </form>
+                </li>
+                <li>
+                    <a href="/login">
+                        <button type="button" class="btn" style="color:rgb(253, 98, 70);">
+                            Giriş yap
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/register">
+                        <button type="button" class="btn" style="height: 40px; width: 85px; color: white; background-color: rgb(253, 98, 70);">
+                            Kayıt Ol
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>

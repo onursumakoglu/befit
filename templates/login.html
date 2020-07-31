@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/log-reg.css') }}">
+    </head>
+
+    <section class="login-içeriği">
+        <h1>B E F I T 'e Hoşgeldiniz!</h1>
+        <div class="giriş">
+            <div class="email">
+                <label><b>Email Adresi</b></label>
+                <div >
+                    <input type="text" placeholder="Email Adresinizi Giriniz">
+                </div>
+            </div>
+            <div class="parola">
+                <label><b>Parola</b></label>
+                <div>
+                    <input type="password" placeholder="Parolanızı Giriniz">
+                </div>
+            </div>
+            <div >
+                <a href="/anasayfa">
+                    <button class="giriş-butonu"> Giriş Yap </button>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+    
+{% endblock %}

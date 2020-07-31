@@ -1,8 +1,8 @@
-.__pycache__
+.vscode
 
-img/ürünler/*
+static/images/ürünler/*
 !.gitignore
 
-img/*
+static/images/*
 !.gitignore
-!img/ürünler
+!images/ürünler

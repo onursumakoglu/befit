@@ -1,46 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "layout2.html" %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>B E F I T</title>
-     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  </head>
-  <body>
+{% block body %}
 
-    <nav>
-        <div id="navContainer">
-            <div id="navLogo"><a href="main.html">B E F I T</a></div>
-            <ul id="ulNav">
-                <li>
-                    <a href="">Eğitimler</a>
-                </li>
-                <li>
-                    <form class="form-inline">
-                        <input class="form-control" type="search" placeholder="Ne yapmak istersiniz ?" aria-label="Search">
-                    </form>
-                </li>
-                <li>
-                    <a href="program.html">Bugün Yapmam Gerekenler</a>
-                </li>
-                <li>
-                    <a href="">Sepetim</a>
-                </li>
-                <li>
-                    <a href="profil.html">Profil</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div style="clear: both;"></div> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
 
     <section class="nav-alti">
         <div id="bilgi">
@@ -65,21 +29,21 @@
 
         <div class="kutu">
             <div>
-                <img src="img/egitmen1.jpg" alt="">
+                <img src="../static/images/egitmen1.jpg" alt="">
             </div>
             <h6>
                 --- ile Vücut Geliştirme Programı
             </h6>
             <p>
                  Bugün yapmanız gereken antrenman var.
-                <a href="program.html">
+                <a href="/program">
                     <button style="color: white; height: 30px; width: 200px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 18px;">
                         Antrenmanı Görüntüle
                     </button>
                 </a>
             </p>
             <p>
-                <a href="program.html" style="color:black; text-decoration: none;">
+                <a href="/profil" style="color:black; text-decoration: none;">
                     <button style="color: white; height: 30px; width: 200px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 18px;">
                         İletişime Geç
                     </button>
@@ -93,21 +57,21 @@
         <div class="sag-kutu">
             <div class="kutu">
                 <div>
-                    <img src="img/egitmen2.jpg" alt="">
+                    <img src="../static/images/egitmen2.jpg" alt="">
                 </div>
                 <h6>
                     --- Eşliğinde Diyet Programı
                 </h6>
                 <p>
                     Diyetiniz bugün de devam ediyor.
-                    <a href="program.html">
+                    <a href="/program">
                         <button style="color: white; height: 30px; width: 200px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 18px;">
                             Programı Görüntüle
                         </button>
                     </a>
                 </p>
                 <p>
-                    <a href="program.html" style="color:black; text-decoration: none;">
+                    <a href="/profil" style="color:black; text-decoration: none;">
                         <button style="color: white; height: 30px; width: 200px; background-color: #ee6868; border-radius: 20px; border-color: rgb(241, 179, 177); font-size: 18px;">
                             İletişime Geç
                         </button>
@@ -130,46 +94,33 @@
 
                 
         <div>
-            <img src="img/ürünler/product-whey.jpg" alt="">
+            <img src="../static/images/ürünler/product-whey.jpg" alt="">
             <p>-- Önerdi</p>
             <a href="">Whey Protein Tozu</a>
             <p>349,00 ₺</p>
         </div>
 
         <div>
-            <img src="img/ürünler/product-fındık.png" alt="">
+            <img src="../static/images/ürünler/product-fındık.png" alt="">
             <p>-- Önerdi</p>
             <a href="">Rize Fındığı 1KG</a>
             <p>65,99 ₺</p>
         </div>
 
         <div>
-            <img src="img/ürünler/product-gainer.jpg" alt="">
+            <img src="../static/images/ürünler/product-gainer.jpg" alt="">
             <p>-- Önerdi</p>
             <a href="">Whey Protein Tozu</a>
             <p>349,00 ₺</p>
         </div>
 
         <div>
-            <img src="img/ürünler/product-fındık2.png" alt="">
+            <img src="../static/images/ürünler/product-fındık2.png" alt="">
         </div>
 
         <div>
-            <img src="img/ürünler/product-bcca.jpg" alt="">
+            <img src="../static/images/ürünler/product-bcca.jpg" alt="">
         </div>
     </section>
 
-    <div class="footer">
-        <footer class="page-footer font-small special-color-white text-white bg-dark pt-2">
-            <div class="text-center py-3">
-                © B E F I T 2020 - Tüm hakları saklıdır.
-            </div>
-        </footer>
-    </div>
-
-
-
-  
-  </body>
-</html>
-
+{% endblock body %}

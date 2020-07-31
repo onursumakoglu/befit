@@ -1,43 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "layout2.html" %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/program.css">
-    <title>B E F I T</title>
-</head>
-<body>
+{% block body %}
 
-    <nav>
-        <div id="navContainer">
-            <div id="navLogo"><a href="main.html">B E F I T</a></div>
-            <ul id="ulNav">
-                <li>
-                    <a href="">Eğitimler</a>
-                </li>
-                <li>
-                    <form class="form-inline">
-                        <input class="form-control" type="search" placeholder="Ne yapmak istersiniz ?" aria-label="Search">
-                    </form>
-                </li>
-                <li>
-                    <a href="program.html">Bugün Yapmam Gerekenler</a>
-                </li>
-                <li>
-                    <a href="">Sepetim</a>
-                </li>
-                <li>
-                    <a href="profil.html">Profil</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div style="clear: both;"></div>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/program.css') }}">
+    </head>
 
     <section class="nav-alti">
         <div id="bilgi">#</div>
@@ -49,7 +16,7 @@
 
     <section class="sec1">
         <div id="img-name">-- ile Vücut Geliştirme Programı</div>
-        <img src="img/egitmen1.jpg" alt="">
+        <img src="../static/images/egitmen1.jpg" alt="">
 
         <ul class="sec1-ul">
             <li>
@@ -98,12 +65,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="profil.html">
+                    <a href="/profil">
                         <button>Eğitmeni Değerlendir</button>
                     </a>
                 </li>
                 <li>
-                    <a href="profil.html">
+                    <a href="/profil">
                         <button>Vücut Bilgilerini Güncelle</button>
                     </a>
                 </li>
@@ -115,7 +82,7 @@
 
     <section class="sec2">
         <div id="img-name">-- ile Diyet Programı</div>
-        <img class="image1" src="img/egitmen2.jpg" alt="">
+        <img class="image1" src="../static/images/egitmen2.jpg" alt="">
 
         <div class="kahvalti">
             <h4>Kahvaltı</h4>
@@ -170,7 +137,7 @@
         </div>
 
         
-        <img class="image2" src="img/diet.jpg" alt="">
+        <img class="image2" src="../static/images/diet.jpg" alt="">
 
         <div style="clear: both;"></div>
 
@@ -182,12 +149,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="profil.html">
+                    <a href="/profil">
                         <button>Eğitmeni Değerlendir</button>
                     </a>
                 </li>
                 <li>
-                    <a href="profil.html">
+                    <a href="/profil">
                         <button>Vücut Bilgilerini Güncelle</button>
                     </a>
                 </li>
@@ -195,19 +162,4 @@
         </div>
     </section>
 
-
-    <div class="footer">
-        <footer class="page-footer font-small special-color-white text-white bg-dark pt-2">
-            <div class="text-center py-3">
-                © B E F I T 2020 - Tüm hakları saklıdır.
-            </div>
-        </footer>
-    </div>
-
-
-    
-
-
-    
-</body>
-</html>
+{% endblock body %}
